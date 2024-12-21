@@ -63,3 +63,15 @@ yarn.lock
 
 # Git
 !.gitkeep
+
+# Логи Celery
+celerybeat-schedule
+
+# Бэкапы базы данных
+*.sql
+*.sqlite3
+*.db
+
+# Документация Swagger
+*.json
+*.yaml
