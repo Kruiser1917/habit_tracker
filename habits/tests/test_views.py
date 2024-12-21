@@ -1,7 +1,7 @@
 import pytest
 from rest_framework.test import APIClient
 from django.contrib.auth.models import User
-from habits.models import Habit
+from habit_tracker.models import Habit
 
 
 @pytest.mark.django_db

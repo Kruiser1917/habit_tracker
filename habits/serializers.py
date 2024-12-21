@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Habit
+from habit_tracker.models import Habit
 
 
 class HabitSerializer(serializers.ModelSerializer):

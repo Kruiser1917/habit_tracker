@@ -1,5 +1,5 @@
 from rest_framework.viewsets import ModelViewSet
-from .models import Habit
+from habit_tracker.models import Habit
 from .serializers import HabitSerializer
 from .permissions import IsOwnerOrReadOnly
 from .tasks import send_habit_reminder
