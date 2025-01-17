@@ -27,7 +27,7 @@ Habit Tracker — это приложение для управления и о�
 ### 1. Клонирование репозитория
 
 ```bash
-git clone https://github.com/your-username/habit-tracker.git
+git clone https://github.com/Kruiser1917/habit-tracker.git
 cd habit-tracker
 ```
 

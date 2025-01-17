@@ -1,29 +1,20 @@
-# Базовый образ
-FROM python:3.10
+# Используем официальный Python образ
+FROM python:3.12-slim
 
-# Установка зависимостей системы
-RUN apt-get update && apt-get install -y \
-    libpq-dev \
-    && rm -rf /var/lib/apt/lists/*
-
-# Установка рабочей директории
+# Устанавливаем рабочую директорию
 WORKDIR /app
 
-# Копирование файла зависимостей
+# Копируем зависимые файлы
 COPY requirements.txt .
 
-# Установка зависимостей Python
+# Устанавливаем зависимости
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Копирование исходного кода проекта
+# Копируем весь проект в контейнер
 COPY . .
 
-# Установка переменных окружения
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
-
-# Открытие порта
+# Открываем порт для Django
 EXPOSE 8000
 
-# Запуск сервера разработки
+# Запускаем Django сервер
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
