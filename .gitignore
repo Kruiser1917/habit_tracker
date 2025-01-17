@@ -1,0 +1,77 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.swp
+*.swo
+
+# Virtual Environment
+env/
+venv/
+ENV/
+venv.bak/
+
+# Django
+*.log
+*.pot
+db.sqlite3
+media/
+
+# Django migrations
+*/migrations/*
+!*/migrations/__init__.py
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# JetBrains IDE (PyCharm)
+.idea/
+*.iml
+
+# VSCode
+.vscode/
+
+# Environment variables
+.env
+.env.*
+
+# Docker
+docker-compose.override.yml
+*.bak
+
+# Pytest
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Git
+!.gitkeep
+
+# Логи Celery
+celerybeat-schedule
+
+# Бэкапы базы данных
+*.sql
+*.sqlite3
+*.db
+
+# Документация Swagger
+*.json
+*.yaml
